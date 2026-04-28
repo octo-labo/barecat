@@ -144,6 +144,7 @@ function init(): void {
   }
 
   console.log(`  ${getTheme().dim}Commands: /context  /model  /think  /theme  /sessions  /count  /quit${getTheme().reset}`)
+  console.log(`  ${getTheme().dim}Type your message and press Enter to chat.${getTheme().reset}`)
   console.log()
 }
 
