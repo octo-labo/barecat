@@ -1,0 +1,39 @@
+{
+  "name": "barecat",
+  "version": "1.0.0",
+  "description": "Zero-overhead LLM chat CLI. No system prompt, no memory injection, no token waste.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "barecat": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "chcp 65001 >nul && node dist/index.js",
+    "dev": "chcp 65001 >nul && npx tsx src/index.ts"
+  },
+  "keywords": [
+    "llm",
+    "cli",
+    "chat",
+    "anthropic",
+    "claude",
+    "copilot",
+    "minimal",
+    "persistent",
+    "session"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/octo-labo/barecat"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.0.0"
+  }
+}
